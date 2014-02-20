@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row ">
+        <div class="col" style="width:400px;margin-left:auto; margin-right:auto;">
+            <div class="myoverlaybelow" style="width:400px; height:400px; position: relative">
+                <img src="img/page3/pocketmon.png" style="width:400px; height:400px;"/>
+                <div class="myoverlayabove" style="width:400px; height:400px; position: absolute; top:0; left: 0; z-index: 10; background: #000000; opacity: 0.8">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mycozyrow">
+        <div class="col"><center><img class="mybutton" src="img/page3/btn_start.png"/></center></div>
+    </div>
+    <script type="application/javascript">
+        $('.mybutton').click(function(){
+            $('.myoverlayabove').hide();
+        });
+    </script>
+</div>

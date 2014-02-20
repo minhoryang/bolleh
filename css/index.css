@@ -50,6 +50,15 @@ body header {
     */
 }
 
+.mycozyrow {
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.myimagefit {
+    width: 70%;
+}
+
 .vcenter {
     display: inline-block;
     vertical-align: middle;
