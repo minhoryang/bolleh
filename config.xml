@@ -28,6 +28,9 @@
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
     <preference name="DisallowOverscroll" value="true" />
+    <!-- iOS Only -->
+    <preference name="deployment-target" value="7.0" />
+
     
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
