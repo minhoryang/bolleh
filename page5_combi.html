@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row" style="margin-top:50px">
+        <center>
+            <img src="img/page5/saving_combi_explanation.png" class="img-responsive" />
+        </center>
+    </div>
+    <div class="row" style="height:100%; margin-top:50px">
+        <div class="col-md-6">
+            <b>가족 중 KT 고객 수를 입력해주세요.</b><br />
+            <div class="row" style="margin-bottom:20px">
+                <input class="number" type="number" disabled style="width:70%" value="3"/>
+                <img class="btn_plus" src="img/page5/btn_combi_insert.png" style="width:30px"/>
+                <img class="btn_minus" src="img/page5/btn_combi_delete.png" style="width:30px"/>
+            </div>
+            <div class="row target"></div>
+            <center>
+                <img class="mybutton" src="img/page5/btn_combi_compare.png" style="width:60%"/>
+            </center>
+        </div>
+        <div class="col-md-6 mypic" style="float:left; width:50%; height:100%; background:#999">사진?</div>
+    </div>
+</div>
+<script type="application/javascript">
+    var form = "\
+<div class='row' style='margin-bottom:10px'>\
+    <select class='form-control' style='width:90%'>\
+        <option value='35'>35요금제</option>\
+        <option value='45'>45요금제</option>\
+        <option value='55' selected>55요금제</option>\
+        <option value='65'>65요금제</option>\
+        <option value='75'>75요금제</option>\
+    </select>\
+</div>";
+    // init
+    $('.mypic').hide();
+    for(i=0;i<$('.number')[0].value;i++)
+        $('.target').append(form);
+    
+    $('.btn_plus').click(function(){
+        if($('.number')[0].value<5){
+        $('.target').append(form);
+        $('.number')[0].value++;
+        }
+    });
+    $('.btn_minus').click(function(){
+        if($('.number')[0].value>1){
+            $('.number')[0].value--;
+            $('.target').children()[$('.target').children().length - 1].remove();
+        }
+    });
+    $('.mybutton').click(function(){
+        $('.mypic').show();
+    });
+</script>
