@@ -2,15 +2,21 @@
     <div style="float:left; width: 20%; height:100%; display: table">
         <div style="height: 100%; width: 100%; vertical-align:middle; display:table-cell">
             <center>
-                <a href="index.html"><img src="img/bolleh_logo.png" class="img-responsive" style="margin-left:50px"/></a>
+                <a href="index.html"><img class="mylogo" style="margin-left:50px; width:200px"/></a>
             </center>
         </div>
     </div>
     <div style="float:right; width: 20%; height:100%; display: table">
         <div style="height: 100%; width: 100%; vertical-align:middle; display:table-cell">
             <center>
-                <a href="http://olleh.com"><img src="img/olleh_logo.png" class="img-responsive"/></a>
+                <!--<a href="http://olleh.com">--><img src="img/olleh_logo.png" class="img-responsive"/><!--</a>-->
             </center>
         </div>
     </div>
+    <script type="application/javascript">
+    if($.QueryString['logo']){
+        $('.mylogo')[0].src = $.QueryString['logo'];
+    }else
+        $('.mylogo')[0].src = "img/bolleh_logo.png";
+    </script>
 </div>

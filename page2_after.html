@@ -1,0 +1,102 @@
+<div style="overflow:hidden">
+    <div class="row">
+        <div class="col-md-1" style="float:left;"></div>
+        <div class="col-md-3" style="float:left;">
+            <div class="row" style="margin-top:50px">
+                <center><img src="img/page2/explanation01.png" class="myimagefit" style="margin-bottom:15px" /></center>
+                <div class="container" style="width: 95%">
+                    <select class="form-control">
+                        <option selected="selected">삼성 갤럭시 S2</option>
+                        <option>삼성 갤럭시 S3</option>
+                        <option>삼성 갤럭시 S4</option>
+                        <option>Apple iPhone 4</option>
+                        <option>Apple iPhone 5s</option>
+                    </select>
+                </div>
+                <center><img src="img/page2/galaxy_s2.png" style="width: 85%" /></center>
+            </div>
+        </div>
+        <div class="col-md-4" style="float:left;">
+            <div class="container2" style="text-transform:none">
+                <div class="row" style="color:#ffffff">
+                    1<br />
+                    2<br />
+                    3<br />
+                    4<br />
+                    5<br />
+                </div>
+                <div style="line-height:90%; margin-bottom: 50px">
+                    <center>아래의 버튼을 클릭하여</center><br />
+                    <center>좀 더 자세한 휴대폰 성능비교를 확인해 보세요.</center><br />
+                </div>
+                <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+                    <div class="col-md-4" style="float:left; ; height:100%"><center>1.2GHz</center><center>듀얼코어</center></div>
+                    <div class="col-md-4" style="float:left; ; height:100%">
+                        <a class="mypopup" href="page2_popup_cpu.html">
+                            <img src="img/page2/btn_cpu.png" style="width:100%"/>
+                        </a>
+                    </div>
+                    <div class="col-md-4" style="float:left; ; height:100%"><center>Exynos 5</center><center>옥타코어</center></div>
+                </div>
+                <div class="row" style="margin-top: 10px; margin-bottom: 25px">
+                    <div class="col-md-4" style="float:left; ; height:100%"><center>800만 화소</center></div>
+                    <div class="col-md-4" style="float:left; ; height:100%">
+                        <a class="mypopup" href="page2_popup_camera.html">
+                            <img src="img/page2/btn_camera.png" style="width:100%" />
+                        </a>
+                    </div>
+                    <div class="col-md-4" style="float:left; ; height:100%"><center>1300만 화소</center></div>
+                </div>
+                <div class="row" style="margin-top: 15px; margin-bottom: 25px">
+                    <div class="col-md-4" style="float:left; ; height:100%"><center>1650mAh</center></div>
+                    <div class="col-md-4" style="float:left; ; height:100%">
+                        <img src="img/page2/btn_battery.png" style="width:100%" class="mypopover"
+                             data-toggle="popover" data-placement="top" data-content="준비중"/>
+                    </div>
+                    <div class="col-md-4" style="float:left; ; height:100%"><center>2600mAh</center></div>
+                </div>
+                <div class="row" style="margin-top: 15px; margin-bottom: 25px">
+                    <div class="col-md-4" style="float:left; ; height:100%"><center>13.49GB</center></div>
+                    <div class="col-md-4" style="float:left; ; height:100%">
+                        <img src="img/page2/btn_memory.png" style="width:100%" class="mypopover"
+                             data-toggle="popover" data-placement="top" data-content="준비중"/>
+                    </div>
+                    <div class="col-md-4" style="float:left; ; height:100%"><center>16GB/32GB</center></div>
+                </div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col-md-4" style="float:left; ; height:100%"><center>108.5mm</center></div>
+                    <div class="col-md-4" style="float:left; ; height:100%">
+                        <img src="img/page2/btn_display.png" style="width:100%" class="mypopover"
+                             data-toggle="popover" data-placement="top" data-content="준비중"/>
+                    </div>
+                    <div class="col-md-4" style="float:left; ; height:100%"><center>126.7mm</center></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" style="float:left;">
+            <div class="row" style="margin-top:50px">
+                <center><img src="img/page2/explanation01.png" class="myimagefit" style="margin-bottom:15px" /></center>
+                <div class="container" style="width: 95%">
+                    <select class="form-control">
+                        <option>삼성 갤럭시 S2</option>
+                        <option>삼성 갤럭시 S3</option>
+                        <option selected="selected">삼성 갤럭시 S4</option>
+                        <option>Apple iPhone 4</option>
+                        <option>Apple iPhone 5s</option>
+                    </select>
+                </div>
+                <center><img src="img/page2/galaxy_s4.png" class="" style="width: 90%" /></center>
+            </div>
+        </div>
+        <div class="col-md-1" style="float:left;"></div>
+    </div>
+    <script type="application/javascript">
+        $('.mypopup').colorbox({iframe:true, width:"95%", height:"65%", transition:'none'});
+        $('.mypopover').popover().click(function (it) {
+            setTimeout(function () {
+                $(it.target).popover('hide');
+            }, 1000);
+        });
+
+    </script>
+</div>
