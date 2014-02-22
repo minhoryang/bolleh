@@ -5,42 +5,56 @@
     <div class="row">
         <div class="row" style="margin-top:40px">
             <div class="col-md-3">
-                <img src="img/page5/kb_card.jpg" class="img-responsive" /><br />
+                <a href="page5_card_kb.html" class="mypopup">
+                    <img src="img/page5/kb_card.jpg" class="img-responsive" /><br />
+                </a>
                 <center>국민카드</center>
             </div>
             <div class="col-md-3">
-                <img src="img/page5/kb_card.jpg" class="img-responsive" /><br />
+                <img src="img/page5/kb_card.jpg" class="img-responsive mypopover"
+                     data-toggle="popover" data-placement="top" data-content="현재 준비되어 있지 않습니다."/><br />
                 <center>기업은행</center>
             </div>
             <div class="col-md-3">
-                <img src="img/page5/kb_card.jpg" class="img-responsive" /><br />
+                <img src="img/page5/kb_card.jpg" class="img-responsive mypopover"
+                     data-toggle="popover" data-placement="top" data-content="현재 준비되어 있지 않습니다."/><br />
                 <center>롯데카드</center>
             </div>
             <div class="col-md-3">
-                <img src="img/page5/kb_card.jpg" class="img-responsive" /><br />
+                <img src="img/page5/kb_card.jpg" class="img-responsive mypopover"
+                     data-toggle="popover" data-placement="top" data-content="현재 준비되어 있지 않습니다."/><br />
                 <center>삼성카드</center>
             </div>
         </div>
         <div class="row" style="margin-top:40px">
             <div class="col-md-3">
-                <img src="img/page5/kb_card.jpg" class="img-responsive" /><br />
+                <img src="img/page5/kb_card.jpg" class="img-responsive mypopover"
+                     data-toggle="popover" data-placement="top" data-content="현재 준비되어 있지 않습니다."/><br />
                 <center>신한카드</center>
             </div>
             <div class="col-md-3">
-                <img src="img/page5/kb_card.jpg" class="img-responsive" /><br />
+                <img src="img/page5/kb_card.jpg" class="img-responsive mypopover"
+                     data-toggle="popover" data-placement="top" data-content="현재 준비되어 있지 않습니다."/><br />
                 <center>현대카드</center>
             </div>
             <div class="col-md-3">
-                <img src="img/page5/kb_card.jpg" class="img-responsive" /><br />
+                <img src="img/page5/kb_card.jpg" class="img-responsive mypopover"
+                     data-toggle="popover" data-placement="top" data-content="현재 준비되어 있지 않습니다."/><br />
                 <center>시티카드</center>
             </div>
             <div class="col-md-3">
-                <img src="img/page5/kb_card.jpg" class="img-responsive" /><br />
+                <img src="img/page5/kb_card.jpg" class="img-responsive mypopover"
+                     data-toggle="popover" data-placement="top" data-content="현재 준비되어 있지 않습니다."/><br />
                 <center>외환카드</center>
             </div>
         </div>
     </div>
     <script type="application/javascript">
-        $('.mypopup').colorbox({iframe:true, width:"95%", height:"65%", transition:'none'});
+        $('.mypopup').colorbox({iframe:true, width:"75%", height:"40%", transition:'none'});
+        $('.mypopover').popover().click(function (it) {
+            setTimeout(function () {
+                $(it.target).popover('hide');
+            }, 3000);
+        });
     </script>
 </div>
