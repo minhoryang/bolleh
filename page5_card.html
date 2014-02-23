@@ -11,8 +11,9 @@
                 <center>국민카드</center>
             </div>
             <div class="col-md-3">
-                <img src="img/page5/ibk.jpg" class="img-responsive mypopover"
-                     data-toggle="popover" data-placement="top" data-content="현재 준비되어 있지 않습니다."/><br />
+                <a href="page5_card_ibk.html" class="mypopup2">
+                    <img src="img/page5/ibk.jpg" class="img-responsive"/><br />
+                </a>
                 <center>기업은행</center>
             </div>
             <div class="col-md-3"><br />
@@ -51,6 +52,7 @@
     </div>
     <script type="application/javascript">
         $('.mypopup').colorbox({iframe:true, width:"75%", height:"40%", transition:'none'});
+        $('.mypopup2').colorbox({iframe:true, width:"37.5%", height:"40%", transition:'none'});
         $('.mypopover').popover().click(function (it) {
             setTimeout(function () {
                 $(it.target).popover('hide');
